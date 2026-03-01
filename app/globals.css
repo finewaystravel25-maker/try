@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* ====== COLOR SYSTEM (LIGHT MODE) ====== */
+:root {
+  --cafe-cream: #f0e1c2;
+  --cafe-orange: #E6B17A;
+  --cafe-brown: #8B5A3C;
+  --cafe-gray: #5D4E37;
+  --cafe-gold: #D4AF37;
+  --cafe-mint: #98FB98;
+
+  --background: var(--cafe-cream);
+  --foreground: #171717;
+}
+
+/* ====== GLOBAL BODY ====== */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-roboto), sans-serif; 
+}
+
+html { scroll-behavior: smooth; }
+
+.shadow-pretty {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1), 0 1px 8px rgba(0,0,0,0.1);
+}
+.hover-pretty:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* ====== FONT CLASSES ====== */
+.font-body { font-family: var(--font-roboto), sans-serif; }
+.font-heading { font-family: var(--font-playfair), serif; }
+
+.bg-cafe-brown { background-color: var(--cafe-brown); }
+.text-cafe-cream { color: var(--cafe-cream); }
+.text-cafe-gray { color: var(--cafe-gray); }
+.text-cafe-orange { color: var(--cafe-orange); }
+.text-cafe-brown { color: var(--cafe-brown); }
